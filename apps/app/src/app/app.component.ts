@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { Store } from '@ngrx/store';
 
 @Component({
   standalone: true,
@@ -10,4 +11,6 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 })
 export class AppComponent {
   title = 'app';
+
+  store = inject(Store)
 }

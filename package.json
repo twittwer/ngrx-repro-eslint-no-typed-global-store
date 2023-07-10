@@ -2,7 +2,11 @@
   "name": "@org/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "lint": "nx lint app",
+    "downgrade": "npm i -E -D @ngrx/eslint-plugin@16.0.1",
+    "upgrade": "npm i -E -D @ngrx/eslint-plugin@16.1.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "16.1.4",
@@ -33,6 +37,7 @@
     "@angular/cli": "16.1.4",
     "@angular/compiler-cli": "16.1.4",
     "@angular/language-service": "16.1.4",
+    "@ngrx/eslint-plugin": "16.1.0",
     "@ngrx/schematics": "16.0.1",
     "@nx/cypress": "16.5.0",
     "@nx/eslint-plugin": "16.5.0",
